@@ -1,0 +1,49 @@
+Call me... Sogeking! Hem, I mean... Slingeking!
+
+This is not [i]just a tongue[/i], this is a slingshot! I can use it to grab everything at a distance and to throw it where I want!
+
+[i]NOTE: For easier aiming, use this mod with the [http://steamcommunity.com/sharedfiles/filedetails/?id=315577742]First Person Camera[/url].[/i]
+
+[b]Any question or problem to use this mod? [url=http://steamcommunity.com/sharedfiles/filedetails/?id=314929396]Click here to read the FAQ.[/url][/b]
+
+[b]FEATURES[/b]
+- Slingshot Goat: Can grab objects far away and throw them where you look.
+
+[b]COMMANDS[/b]
+- [b][E]:[/b] Hold for long range lick, release to retract your tongue.
+- [b][R]:[/b] Hold to charge a shot, release to fire.
+
+[b]GAMEPAD COMMANDS[/b]
+- [b][X]:[/b] Hold for long range lick, release to retract your tongue.
+- [b][Y]:[/b] Hold to charge a shot, release to fire.
+
+[b]CHARACTERISTICS[/b]
+[h1]Long range lick:[/h1]
+-- The object you will lick is the one aligned with the center of the screen (somewhere on top of the goat head).
+-- Wait for the end of the lick animation to know if the long range lick worked.
+-- If you lick an object at short range, the long range lick will be cancelled.
+-- You can't throw the object you lick before your tongue is completely retracted.
+[h1]Slingshot:[/h1]
+-- You will throw the item you lick.
+-- If you are not licking anything you will throw the first item in your inventory.
+-- If you have no item in your inventory you will throw a small rock.
+-- Small rocks dissapear 10s after being shot.
+-- The item will fly in the direction pointed by the camera.
+-- The longer you charge, the faster the item will fly.
+-- When you reach the max possible charge, the item start to glow.
+
+[b]EASTER EGGS[/b]
+- [spoiler]You can use the long range lick to catch moving vehicles easily.[/spoiler]
+- [spoiler]If the item you throw is fast enough, it will trigger explosive objects on impact.[/spoiler]
+
+[b]KNOWN BUGS[/b]
+- You can't lick ragdolls at a distance. (can't fix)
+- Throwing really big objects from your inventory can fail (the object pop out but you are not licking it).
+- The long range lick can fail for no visible reason (most of the time you are not exactly aligned with the item you try to lick or an invisible object make the object detection fail).
+- Do NOT combine well with the following mods: Uncle Goat, Spider Goat, Sonic Goat.
+
+[b]DEV NOTES[/b]
+[quote=About this mod]This mod is the combination of two huge requests that have been made a thousand times: make it possible to lick objects at a distance, and make it possible to throw objects where you look.
+For the long range lick, I only had to mess around with the "tongue" properties. In the code, the tongue is represented by a an "object grabber" and it's possible to change its elasticity. So I gave it almost no strength at all when you press the lick key so that your tongue can extend to an item even if it's far away. And then I made the grabber stronger and stronger when you release the key so that the item will come back to you.
+Then I made the throwing part: basically the same mechanism as the Telekinetic Goat, but I had to detect where the camera is looking instead of detecting where the goat is looking. The charging system is some basic maths to make the object fly faster depending on how long you charged the shot. Taking the first item in the inventory caused some problem as there is only a function to remove the item in the slot N of the inventory... Which means you remove an item but you don't know what item you actually removed >_< In order to grab this item and let the player throw it, I had to make a stupid detection of all the items around the goat to find the one that poped out of the inventory...
+[/quote]
